@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ev1art</title>
+</head>
+<body>
+    <form action="eviartyan@gmail.com" class="form" name="anketa">
+        <h1>Заполните поля ниже:</h1>
+        <div class="form__text-container">
+            <div class="form__container">
+                <input type="text" name="first-name" class="form__input-text" id="first-name" required pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя:">
+
+            </div>
+            <div class="form__container">
+                <input type="text" name="second-name" class="form__input-text" id="second-name" required pattern="^[А-Яа-яЁё\s]+$" placeholder="Фамилия:">
+
+            </div>
+            <p class="form__red-text">*Не обязательное поле</p>
+            <div class="form__container">
+                <input type="text" name="nickname" class="form__input-text" id="nickname" placeholder="Ник:">
+
+            </div>
+        </div>
+        <div class="form__radio-container">
+            <p class="form__radio-text">Ваш пол?</p>
+            <div class="form__container">
+                <input class="form__input-radio" type="radio" name="gender" id="gender-male" required>
+                <label class="form__label-radio" for="gender-male">Мужской</label>
+            </div>
+            <div class="form__container">
+                <input class="form__input-radio" type="radio" name="gender" id="gender-female">
+                <label class="form__label-radio" for="gender-female">Женский</label>
+            </div>
+        </div>
+        <div class="form__check-box-container">
+            <p class="form__check-box-text">Какой цвета вам нравятся?</p>
+            <div class="form__container">
+                <input class="form__input-check-box" type="checkbox" name="color" id="blue" >
+                <label class="form__label-check-box" for="blue">Синий</label>
+            </div>
+                <div class="form__container">
+                <input class="form__input-check-box" type="checkbox" name="color" id="green" >
+                <label class="form__label-check-box" for="green">Зеленый</label>
+            </div>
+                <div class="form__container">
+                <input class="form__input-check-box" type="checkbox" name="color" id="red" >
+                <label class="form__label-check-box" for="red">Красный</label>
+            </div>
+                <div class="form__container">
+                <input class="form__input-check-box" type="checkbox" name="color" id="yellow" >
+                <label class="form__label-check-box" for="yellow">Желтный</label>
+            </div>
+        </div>
+        <div class="form__buttons">
+            <button class="form__btn-s" type="submit">Отправить!</button>
+            <button class="form__btn-r" type="reset">Очистить</button>
+        </div>
+    </form>
+</body>
+</html>
